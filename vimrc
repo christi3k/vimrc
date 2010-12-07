@@ -251,6 +251,7 @@ let g:SrcExpl_updateTagsKey = "<F12>"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Rainbows!
+" (currently not working)
 nmap <leader>R :RainbowParenthesesToggle<CR>
 
 set directory=~/.tmp//
