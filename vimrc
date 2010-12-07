@@ -267,3 +267,5 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " match lines longer than 80 chars
 " au InsertEnter * match ErrorMsg '\%>80v.\+'
+"
+autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
