@@ -7,7 +7,7 @@ endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-addon-manager
-" url: http://github.com/MarcWeber/vim-addon-manager 
+" url: http://github.com/MarcWeber/vim-addon-manager
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " tell Vim where to find the autoload function:
 " set runtimepath+=~/vim-plugins/vim-addon-manager
@@ -20,17 +20,17 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " php-doc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
-nnoremap <C-P> :call PhpDocSingle()<CR> 
-vnoremap <C-P> :call PhpDocRange()<CR> 
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+nnoremap <C-P> :call PhpDocSingle()<CR>
+vnoremap <C-P> :call PhpDocRange()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" PHP syntax checking 
+" PHP syntax checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Leader>l :!php -l %<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NERD_tree 
+" NERD_tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let NERDTreeWinPos = "right"
 let NERDTreeWinSize = 40
@@ -41,16 +41,16 @@ map <Leader>t :NERDTreeToggle<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" taglist 
+" taglist
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <F2> :TlistToggle<CR>
-let Tlist_Close_On_Select = 1 
-let Tlist_GainFocus_On_ToggleOpen = 1 
+let Tlist_Close_On_Select = 1
+let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Process_File_Always = 1
 let Tlist_WinWidth = 55
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Defaults I like 
+" Defaults I like
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set updatetime=2
@@ -93,6 +93,7 @@ set incsearch "Make search act like search in modern browsers
 set noexpandtab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 set smarttab
 
 set lbr
@@ -183,7 +184,7 @@ autocmd FileType c set omnifunc=ccomplete#Complete
 """""""""""""""""""""""""""""""
 "au FileType javascript call JavaScriptFold()
 
-function! JavaScriptFold() 
+function! JavaScriptFold()
     setl foldmethod=syntax
     setl foldlevelstart=1
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
@@ -196,12 +197,12 @@ endfunction
 
 
 """"""""""""""""""""""""""""""
-" => autotag.vim 
+" => autotag.vim
 """""""""""""""""""""""""""""""
 "source ~/.vim/plugin/autotag.vim
- 
+
 """"""""""""""""""""""""""""""
-" => srcexplor.vim 
+" => srcexplor.vim
 """""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                                                              "
@@ -250,6 +251,20 @@ let g:SrcExpl_updateTagsKey = "<F12>"
 "                                                                              "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Spell checking
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+
+"Shortcuts using <leader>
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
+
+set spell
+
 " Rainbows!
 " (currently not working)
 nmap <leader>R :RainbowParenthesesToggle<CR>
@@ -269,3 +284,20 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " au InsertEnter * match ErrorMsg '\%>80v.\+'
 "
 autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
+
+" Removes trailing spaces
+function TrimWhiteSpace()
+  %s/\s*$//
+  ''
+:endfunction
+
+"autocmd FileWritePre * :call TrimWhiteSpace()
+"autocmd FileAppendPre * :call TrimWhiteSpace()
+"autocmd FilterWritePre * :call TrimWhiteSpace()
+"autocmd BufWritePre * :call TrimWhiteSpace()
+
+map <S-F2> :call TrimWhiteSpace()<CR>
+map! <S-F2> :call TrimWhiteSpace()<CR>
+
+set list listchars=tab:»·,trail:·,extends:>
+
