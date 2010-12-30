@@ -300,4 +300,5 @@ map <S-F2> :call TrimWhiteSpace()<CR>
 map! <S-F2> :call TrimWhiteSpace()<CR>
 
 set list listchars=tab:»·,trail:·,extends:>
+map <leader>v <Plug>TaskList
 
