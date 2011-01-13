@@ -47,7 +47,7 @@ hi PmenuThumb                                           guifg=azure2
 hi Question     gui=bold                                guifg=green
 hi Search                       guibg=DarkGreen         guifg=white
 hi StatusLine   gui=none        guibg=LightSteelBlue4   guifg=white
-hi StatusLineNC gui=none        guibg=LightSteelBlue4   guifg=gray
+hi StatusLineNC gui=none        guibg=LightSteelBlue4   guifg=LightGrey
 hi Title        gui=bold        guibg=#3a4959           guifg=AliceBlue
 hi VertSplit                    guibg=LightSteelBlue4   guifg=LightSteelBlue4
 hi Visual       gui=reverse     guibg=white             guifg=#6c7b8b

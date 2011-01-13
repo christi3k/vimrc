@@ -75,7 +75,9 @@ set number
 set autoindent
 
 set cursorline
-set statusline==%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+"set statusline==%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+"set statusline=%<%F%h%m%r%h%w%y\ %{&ff}\ %{strftime(\"%c\",getftime(expand(\"%:p\")))}%=\ lin:%l\,%L\ col:%c%V\ pos:%o\ ascii:%b\ %P
+set statusline==%F%m%r%h%w\ [branch=%{fugitive#statusline()}]\ [format=%{&ff}]\ [type=%Y]\ [ascii=\%03.3b]\ [hex=\%02.2B]\ [pos=%04l,%04v][%p%%]\ [len=%L]
 set laststatus=2
 
 set ruler " Always show current position
@@ -90,6 +92,7 @@ set incsearch "Make search act like search in modern browsers
 " Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "set expandtab
+" use tabs and not spaces (boo, but it's what we're doing at SI)
 set noexpandtab
 set shiftwidth=4
 set tabstop=4
