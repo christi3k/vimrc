@@ -25,6 +25,7 @@ hi String          guifg=#D7AF5F
 hi Conditional     guifg=#FF0000               gui=bold
 hi Constant        guifg=#87AF00               gui=bold
 hi Cursor          guifg=#AFD787 guibg=#DADADA
+hi CursorIM        guifg=#AFD787 guibg=#DADADA
 hi Debug           guifg=#FFD7FF               gui=bold
 hi Define          guifg=#5FD7FF
 hi Delimiter       guifg=#626262
@@ -96,7 +97,7 @@ hi WildMenu        guifg=#5FD7FF guibg=#000000
 
 hi Normal          guifg=#FFD7FF guibg=#121212
 hi Comment         guifg=#AF875F
-hi CursorLine                    guibg=#1C1C1C gui=none
+hi CursorLine                    guibg=#1C1C1C
 hi CursorColumn                  guibg=#121212
 hi LineNr          guifg=#626262 guibg=#121212
 hi NonText         guifg=#121212 guibg=#121212
@@ -199,3 +200,13 @@ if &t_Co > 255
    hi TabLineFill     ctermfg=233 ctermbg=233
    hi TabLineSel      ctermfg=220 ctermbg=234
 end
+
+" =============================================================================
+" Change cursor color in different modes
+" =============================================================================
+
+hi Cursor                       guibg=DodgerBlue3       guifg=white
+hi iCursor                      guibg=red               guifg=white
+
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i-ci:ver15-iCursor
