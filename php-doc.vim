@@ -1,7 +1,7 @@
 " PDV (phpDocumentor for Vim)
 " ===========================
 "
-" Version: 1.0.1
+" Version: 1.0.0
 " 
 " Copyright 2005 by Tobias Schlitt <toby@php.net>
 " Inspired by phpDoc script for Vim by Vidyut Luther (http://www.phpcult.com/).
@@ -35,7 +35,7 @@
 " For example include into your .vimrc:
 " 
 " source ~/.vim/php-doc.vim
-" imap <C-o> :set paste<CR>:exe PhpDoc()<CR>:set nopaste<CR>i
+" imap <C-o> :set paste<CR>:call PhpDoc()<CR>:set nopaste<CR>i
 "
 " This includes the script and maps the combination <ctrl>+o (only in
 " insert mode) to the doc function. 
@@ -50,17 +50,9 @@
 "  scripting the first time and trying to fix Vidyut's solution, which
 "  resulted in a complete rewrite.
 "
-" Version 1.0.1
+" Version 1.1.0
 " -------------
-"  * Fixed issues when using tabs instead of spaces.
-"  * Fixed some parsing bugs when using a different coding style.
 "  * Fixed bug with call-by-reference parameters. 
-"  * ATTENTION: This version already has code for the next version 1.1.0,
-"  which is propably not working!
-"
-" Version 1.1.0 (preview)
-" -------------
-"  * Added foldmarker generation.
 " 
 
 if has ("user_commands")
@@ -77,22 +69,32 @@ let g:pdv_cfg_CommentSingle = "//"
 " Default values
 let g:pdv_cfg_Type = "mixed"
 let g:pdv_cfg_Package = ""
-let g:pdv_cfg_Version = "$id$"
-let g:pdv_cfg_Author = "Christie Koehler <christie@shopigniter.com>"
-let g:pdv_cfg_Copyright = "1997-2005 The PHP Group"
-let g:pdv_cfg_License = "PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}"
+let g:pdv_cfg_Package = "Webdav"
+let g:pdv_cfg_Version = "//autogen//"
+let g:pdv_cfg_Author = "Christie Koehler <christiekoehler@gmail.com>"
+let g:pdv_cfg_Copyright = "Copyright (C) 2005-2007 eZ systems as. All rights reserved."
+let g:pdv_cfg_License = "http://ez.no/licenses/new_bsd New BSD License"
+
+" TOB: let g:pdv_cfg_Type = "mixed"
+" TOB: let g:pdv_cfg_Package = ""
+" TOB: let g:pdv_cfg_Version = "$id$"
+" TOB: let g:pdv_cfg_Author = "Tobias Schlitt <toby@php.net>"
+" TOB: let g:pdv_cfg_Copyright = "1997-2005 The PHP Group"
+" TOB: let g:pdv_cfg_License = "PHP Version 3.0 {@link http://www.php.net/license/3_0.txt}"
 
 let g:pdv_cfg_ReturnVal = "void"
 
 " Wether to create @uses tags for implementation of interfaces and inheritance
-let g:pdv_cfg_Uses = 1
+let g:pdv_cfg_Uses = 0
+" TOB: let g:pdv_cfg_Uses = 1
 
 " Options
 " :set paste before documenting (1|0)? Recommended.
 let g:pdv_cfg_paste = 1
 
 " Wether for PHP5 code PHP4 tags should be set, like @access,... (1|0)?
-let g:pdv_cfg_php4always = 1
+let g:pdv_cfg_php4always = 0
+" TOB: let g:pdv_cfg_php4always = 1
  
 " Wether to guess scopes after PEAR coding standards:
 " $_foo/_bar() == <private|protected> (1|0)?
@@ -129,8 +131,9 @@ let g:pdv_re_attribute = '^\s*\(\(private\|public\|protected\|var\|static\)\+\)\
 let g:pdv_re_class = '^\s*\([a-zA-Z]*\)\s*\(interface\|class\)\s*\([^ ]\+\)\s*\(extends\)\?\s*\([a-zA-Z0-9]*\)\?\s*\(implements*\)\? *\([a-zA-Z0-9_ ,]*\)\?.*$'
 
 let g:pdv_re_array  = "^array *(.*"
-let g:pdv_re_float  = '^[0-9.]\+'
-let g:pdv_re_int    = '^[0-9]\+$'
+" FIXME (retest regex!)
+let g:pdv_re_float  = '^[0-9]*\.[0-9]\+'
+let g:pdv_re_int    = '^[0-9]\+'
 let g:pdv_re_string = "['\"].*"
 let g:pdv_re_bool = "\(true\|false\)"
 

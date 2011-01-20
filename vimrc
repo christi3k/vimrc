@@ -20,9 +20,10 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " php-doc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>
+" move to syntax file 1/20
+"inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
+"nnoremap <C-P> :call PhpDocSingle()<CR>
+"vnoremap <C-P> :call PhpDocRange()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PHP syntax checking
@@ -305,3 +306,14 @@ map! <S-F2> :call TrimWhiteSpace()<CR>
 set list listchars=tab:»·,trail:·,extends:>
 map <leader>v <Plug>TaskList
 let notes_directory = '~/Dropbox/Notes/'
+
+" Jump 5 lines when running out of the screen
+set scrolljump=5
+"
+" " Indicate jump out of the screen when 3 lines before end of the screen
+set scrolloff=3
+
+" Source local settings
+"if filereadable("~/.vimlocalrc")
+"     source ~/.vimlocalrc
+"endif
