@@ -1,13 +1,21 @@
-New note
+Misc Reviews-Storefront notes
 
-To get started enter a title for your note above. When you’re ready to save
-your note just use Vim’s :write or :update commands, a filename will be picked
-automatically based on the title.
+product.htm template
+   • need to call magic method has_reviews()
+   • need this in both the product and the user content (did jason add the user context)
 
-                                    * * *
+misc:
+   • need to know how to organize common/review.html code between template and markup builder functions
+   • need to know how to incoroporate js
+   • add $product::reviews() to SI_Storefront::get_product()
+   • what is $params array in store controllers?
+   • what is $params[’render’] and $params[’structured’]?
+   • markup: Base vs. Factory vs. Renderable?
 
-The notes plug-in comes with self hosting documentation. To jump to these notes
-position your text on the highlighted name and press ‘gf’ in normal mode:
+general operation:
+   • SI_Storefront—>set_content loads markup builder class, creates new instance of markup builder factory of the content “type”, also gets builder for that type.
+   • constructor of Markup Factory loads data that is comment to all templates of “type”
+   • when to put stuff in common vs. store?
 
- • Note taking syntax
- • Note taking commands
+
+

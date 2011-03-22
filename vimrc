@@ -1,4 +1,4 @@
-:autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+":autocmd ColorScheme * highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
 if has("gui_running")
 	colors tesla
@@ -56,7 +56,7 @@ let Tlist_WinWidth = 55
 
 set updatetime=2
 " Sets how many lines of history VIM has to remember
-set history=1000
+set history=200
 
 set nocp
 
@@ -177,10 +177,10 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+"autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+"autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
 """"""""""""""""""""""""""""""
@@ -279,10 +279,10 @@ set directory=~/.tmp//
 "set iskeyword-=_
 
 " highlight unwanted whitespace
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+"highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 
-au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-au InsertLeave * match ExtraWhitespace /\s\+$/
+"au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+"au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " match lines longer than 80 chars
 " au InsertEnter * match ErrorMsg '\%>80v.\+'
