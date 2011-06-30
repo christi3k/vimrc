@@ -1,6 +1,11 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("gui_running")
+        colors neverland-darker
+            "set gfn=Monospace\ 8
+        endif
+
 "store lots of :cmdline history
 set history=1500
 
