@@ -121,3 +121,9 @@ map <C-l> <C-W>l
 " Use the arrows to something usefull
 map <right> :bn<cr>
 map <left> :bp<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == MISC
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" for the notes plugin
+let notes_directory = '~/Dropbox/Notes/'
