@@ -35,3 +35,9 @@
     url = https://github.com/xolox/vim-notes.git
     ignore = untracked
 
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/vim-scripts/delimitMate.vim.git
