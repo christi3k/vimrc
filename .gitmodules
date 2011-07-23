@@ -44,4 +44,5 @@
     ignore = untracked
 [submodule "bundle/textile"]
 	path = bundle/textile
-	url = https://github.com/timcharper/textile.vim.git
+    url = https://github.com/timcharper/textile.vim.git
+    ignore = untracked
