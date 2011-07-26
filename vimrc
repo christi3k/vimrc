@@ -28,6 +28,12 @@ set ignorecase  "ignorecase
 set smartcase   "ignore case as long as input is lowercase
 nmap <silent> <BS> :nohlsearch<CR>
 
+"smarter completion
+set wildmode=list:longest
+
+"set temp directory
+set dir=~/.tmp
+
 set wrap        "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
