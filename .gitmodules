@@ -50,4 +50,3 @@
 	path = bundle/matchit
     url = https://github.com/vim-scripts/matchit.zip.git
     ignore = untracked
-
