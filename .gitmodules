@@ -52,4 +52,6 @@
     ignore = untracked
 [submodule "bundle/pdv"]
 	path = bundle/pdv
-	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
+    url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
+    ignore = untracked
+
