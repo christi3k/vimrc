@@ -42,9 +42,6 @@
 	path = bundle/delimitMate
     url = https://github.com/vim-scripts/delimitMate.vim.git
     ignore = untracked
-[submodule "bundle/pdv"]
-	path = bundle/pdv
-    url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
 [submodule "bundle/textile"]
 	path = bundle/textile
     url = https://github.com/timcharper/textile.vim.git
