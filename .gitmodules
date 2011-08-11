@@ -54,3 +54,6 @@
 	path = bundle/VimRepress
     url = https://github.com/vim-scripts/VimRepress.git
     ignore = untracked
+[submodule "bundle/pdv"]
+	path = bundle/pdv
+	url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
