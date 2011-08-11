@@ -21,8 +21,18 @@ set number      "show line numbers
 set list
 set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
-set incsearch   "find the next match as we type the search
+"seraching
+set incsearch   "incremental search find the next match as we type the search
 set hlsearch    "hilight searches by default
+set ignorecase  "ignorecase
+set smartcase   "ignore case as long as input is lowercase
+nmap <silent> <BS> :nohlsearch<CR>
+
+"smarter completion
+set wildmode=list:longest
+
+"set temp directory
+set dir=~/.tmp
 
 set wrap        "dont wrap lines
 set linebreak   "wrap lines at convenient points
