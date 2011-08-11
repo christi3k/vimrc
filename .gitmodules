@@ -52,4 +52,5 @@
     ignore = untracked
 [submodule "bundle/VimRepress"]
 	path = bundle/VimRepress
-	url = https://github.com/vim-scripts/VimRepress.git
+    url = https://github.com/vim-scripts/VimRepress.git
+    ignore = untracked
