@@ -133,3 +133,6 @@ map <left> :bp<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " for the notes plugin
 let notes_directory = '~/Dropbox/Notes/'
+
+" set temp directory
+set directory=~/.tmp//
