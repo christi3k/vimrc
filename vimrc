@@ -9,6 +9,10 @@ if has("gui_running")
 "store lots of :cmdline history
 set history=1500
 
+"swap & recovery
+set updatecount=50
+"set swapsync   "can be wearing on SSDs
+
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
@@ -20,6 +24,9 @@ set number      "show line numbers
 "display tabs and trailing spaces
 set list
 set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+
+"highlight current line
+set cursorline
 
 "seraching
 set incsearch   "incremental search find the next match as we type the search

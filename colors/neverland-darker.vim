@@ -25,6 +25,7 @@ hi String          guifg=#d7af5f
 hi Conditional     guifg=#ff0000               gui=bold
 hi Constant        guifg=#87af00               gui=bold
 hi Cursor          guifg=#afd787 guibg=#dadada
+hi CursorIM        guifg=#AFD787 guibg=#DADADA
 hi Debug           guifg=#ffd7ff               gui=bold
 hi Define          guifg=#5fd7ff
 hi Delimiter       guifg=#626262
@@ -101,7 +102,8 @@ hi WildMenu        guifg=#5fd7ff guibg=#000000
 
 hi Comment         guifg=#af875f
 hi ColorColumn                   guibg=#202020
-hi CursorLine                    guibg=#121212 gui=none
+"hi CursorLine                    guibg=#121212 gui=none
+hi CursorLine                    guibg=#1C1C1C
 hi CursorColumn                  guibg=#080808
 hi LineNr          guifg=#626262 guibg=#080808
 hi NonText         guifg=#080808 guibg=#080808
