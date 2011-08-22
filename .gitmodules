@@ -58,4 +58,7 @@
 	path = bundle/pdv
     url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
     ignore = dirty
-
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+    url = git://git.wincent.com/command-t.git
+    ignore = untracked

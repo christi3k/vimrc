@@ -161,3 +161,10 @@ inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR> 
 vnoremap <C-P> :call PhpDocRange()<CR> 
 let g:pdv_cfg_Author = "Christie Koehler <christiekoehler@gmail.com>"
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == CommandT Plugin 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+noremap <leader>t <Esc>:CommandT<CR>
+noremap <leader>T <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>
