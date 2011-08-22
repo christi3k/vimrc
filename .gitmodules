@@ -62,3 +62,9 @@
 	path = bundle/command-t
     url = git://git.wincent.com/command-t.git
     ignore = untracked
+[submodule "vim-colors-solarized"]
+	path = vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/colors-solarized"]
+	path = bundle/colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
