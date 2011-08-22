@@ -153,3 +153,11 @@ let notes_directory = '~/Dropbox/Notes/'
 
 " set temp directory
 set directory=~/.tmp//
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == PDV (phpDocumentor for Vim) 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
+nnoremap <C-P> :call PhpDocSingle()<CR> 
+vnoremap <C-P> :call PhpDocRange()<CR> 
+let g:pdv_cfg_Author = "Christie Koehler <christiekoehler@gmail.com>"
