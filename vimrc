@@ -2,7 +2,9 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
-        colors neverland-darker
+        set background=dark
+        colorscheme solarized
+        "colors neverland-darker
             "set gfn=Monospace\ 8
         endif
 
