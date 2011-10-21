@@ -5,8 +5,9 @@ if has("gui_running")
         set background=dark
         colorscheme solarized
         "colors neverland-darker
-            "set gfn=Monospace\ 8
-        endif
+        set gfn=Liberation\ Mono\ 9
+        set lines=50 columns=100
+endif
 
 "store lots of :cmdline history
 set history=1500
