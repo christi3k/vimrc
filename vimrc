@@ -6,7 +6,7 @@ if has("gui_running")
         colorscheme solarized
         "colors neverland-darker
         set gfn=Liberation\ Mono\ 9
-        set lines=50 columns=100
+        set lines=50 columns=125
 endif
 
 "store lots of :cmdline history

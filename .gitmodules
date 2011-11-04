@@ -33,7 +33,7 @@
 [submodule "bundle/notes"]
 	path = bundle/notes
     url = https://github.com/xolox/vim-notes.git
-    ignore = untracked
+    ignore = dirty
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
@@ -45,7 +45,7 @@
 [submodule "bundle/textile"]
 	path = bundle/textile
     url = https://github.com/timcharper/textile.vim.git
-    ignore = untracked
+    ignore = dirty
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
@@ -61,10 +61,13 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
     url = git://git.wincent.com/command-t.git
-    ignore = untracked
+    ignore = dirty
 [submodule "vim-colors-solarized"]
 	path = vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+    url = https://github.com/altercation/vim-colors-solarized.git
+    ignore = dirty
 [submodule "bundle/colors-solarized"]
 	path = bundle/colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+    url = https://github.com/altercation/vim-colors-solarized.git
+    ignore = dirty
+
