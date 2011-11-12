@@ -74,4 +74,8 @@
 	path = bundle/mediawiki
     url = https://github.com/vim-scripts/mediawiki.git
     ignore = dirty
+[submodule "bundle/ragtag"]
+	path = bundle/ragtag
+    url = https://github.com/tpope/vim-ragtag.git
+    ignore = dirty
 
