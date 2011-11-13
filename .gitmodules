@@ -78,4 +78,7 @@
 	path = bundle/ragtag
     url = https://github.com/tpope/vim-ragtag.git
     ignore = dirty
-
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+    url = https://github.com/mitechie/pyflakes-pathogen.git
+    ignore = dirty
