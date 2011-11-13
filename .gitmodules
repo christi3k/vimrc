@@ -82,3 +82,8 @@
 	path = bundle/pyflakes
     url = https://github.com/mitechie/pyflakes-pathogen.git
     ignore = dirty
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+    url = https://github.com/ervandew/supertab.git
+    ignore = dirty
+
