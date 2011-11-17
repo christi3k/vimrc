@@ -97,6 +97,10 @@ map <leader>e :e! ~/.vim/vimrc<cr>
 " When vimrc is edited, reload it
 autocmd! bufwritepost vimrc source ~/.vim/vimrc
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == MISC SHORT CUTS 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Leader>w :set filetype=mediawiki<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == NERD_TREE
@@ -157,13 +161,16 @@ let notes_directory = '~/Dropbox/Notes/'
 " set temp directory
 set directory=~/.tmp//
 
+" useful binding for ack
+nmap <leader>a <Esc>:Ack!
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == PDV (phpDocumentor for Vim) 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
-nnoremap <C-P> :call PhpDocSingle()<CR> 
-vnoremap <C-P> :call PhpDocRange()<CR> 
-let g:pdv_cfg_Author = "Christie Koehler <christiekoehler@gmail.com>"
+"inoremap <C-P> <ESC>:call PhpDocSingle()<CR>i 
+"nnoremap <C-P> :call PhpDocSingle()<CR> 
+"vnoremap <C-P> :call PhpDocRange()<CR> 
+"let g:pdv_cfg_Author = "Christie Koehler <christiekoehler@gmail.com>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == CommandT Plugin 
@@ -171,3 +178,11 @@ let g:pdv_cfg_Author = "Christie Koehler <christiekoehler@gmail.com>"
 noremap <leader>t <Esc>:CommandT<CR>
 noremap <leader>T <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == SuperTab & Python misc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+
+set completeopt=menuone,longest,preview

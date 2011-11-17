@@ -87,3 +87,6 @@
     url = https://github.com/ervandew/supertab.git
     ignore = dirty
 
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = https://github.com/fs111/pydoc.vim.git
