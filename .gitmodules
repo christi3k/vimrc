@@ -86,7 +86,12 @@
 	path = bundle/supertab
     url = https://github.com/ervandew/supertab.git
     ignore = dirty
-
 [submodule "bundle/pydoc"]
 	path = bundle/pydoc
 	url = https://github.com/fs111/pydoc.vim.git
+    ignore = dirty
+[submodule "bundle/vimroom"]
+	path = bundle/vimroom
+    url = https://github.com/vim-scripts/vimroom.vim.git
+    ignore = dirty
+

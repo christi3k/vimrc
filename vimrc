@@ -3,11 +3,16 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
         set background=dark
-        colorscheme solarized
         "colors neverland-darker
         set gfn=Liberation\ Mono\ 9
         set lines=50 columns=125
+else
+        set background=dark
+        set t_Co=256
 endif
+
+colorscheme solarized
+let g:solarized_termcolors=256
 
 "store lots of :cmdline history
 set history=1500
