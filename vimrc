@@ -7,6 +7,11 @@ if has("gui_running")
         set gfn=Liberation\ Mono\ 9
         set lines=50 columns=125
         colorscheme solarized
+        " remove toolbar
+        set guioptions=agiLt
+        nnoremap <F4> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
+        " remove right scrollbar
+        "set guioptions-=r
 else
         "set background=dark
         "set t_Co=256
