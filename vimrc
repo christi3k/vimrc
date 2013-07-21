@@ -4,7 +4,7 @@
 if has("gui_running")
         set background=dark
         "colors neverland-darker
-        set gfn=Liberation\ Mono\ 9
+        set gfn=Liberation\ Mono\ for\ Powerline\ 9
         set lines=50 columns=125
         colorscheme solarized
         " remove toolbar
@@ -19,8 +19,11 @@ endif
 
 "let g:solarized_termcolors=256
 
-"powerline
-let g:Powerline_symbols = 'fancy'
+"powerline (deprecated in favor of airline)
+"let g:Powerline_symbols = 'fancy'
+
+"airline
+let g:airline_powerline_fonts = 1
 
 "store lots of :cmdline history
 set history=1500
