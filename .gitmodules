@@ -33,7 +33,7 @@
 [submodule "bundle/notes"]
 	path = bundle/notes
     url = https://github.com/xolox/vim-notes.git
-    ignore = dirty
+    ignore = untracked
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
@@ -77,7 +77,7 @@
 [submodule "bundle/ragtag"]
 	path = bundle/ragtag
     url = https://github.com/tpope/vim-ragtag.git
-    ignore = dirty
+    ignore = untracked
 [submodule "bundle/pyflakes"]
 	path = bundle/pyflakes
     url = https://github.com/mitechie/pyflakes-pathogen.git
