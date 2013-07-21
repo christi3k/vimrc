@@ -24,6 +24,7 @@ endif
 
 "airline
 let g:airline_powerline_fonts = 1
+let g:airline_theme='solarized'
 
 "store lots of :cmdline history
 set history=1500
