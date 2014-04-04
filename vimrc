@@ -4,7 +4,8 @@
 if has("gui_running")
         set background=dark
         "colors neverland-darker
-        set gfn=Liberation\ Mono\ for\ Powerline\ 9
+        "set gfn=Liberation\ Mono\ for\ Powerline\ 9
+        set gfn=Ubuntu\ Mono\ derivative\ Powerline\ 11
         set lines=50 columns=125
         colorscheme solarized
         " remove toolbar
@@ -26,8 +27,11 @@ endif
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 
+"syntastic
+let g:syntastic_python_checkers=['pyflakes']
+
 "store lots of :cmdline history
-set history=1500
+set history=1550
 
 "swap & recovery
 set updatecount=50
@@ -42,6 +46,7 @@ set showmode    "show current mode down the bottom
 set number      "show line numbers
 
 "display tabs and trailing spaces
+" this overwrites linebreak
 set list
 set listchars=tab:▷⋅,trail:⋅,nbsp:⋅
 
@@ -61,7 +66,7 @@ set wildmode=list:longest
 "set temp directory
 set dir=~/.tmp
 
-set wrap        "dont wrap lines
+set wrap        "wrap lines
 set linebreak   "wrap lines at convenient points
 
 if v:version >= 703
@@ -73,9 +78,9 @@ if v:version >= 703
 endif
 
 "default indent settings
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 set autoindent
 "set smarttab ??
@@ -106,18 +111,27 @@ let mapleader = ","
 let g:mapleader = ","
 
 " Fast saving
-nmap <leader>w :w!<cr>
+nnoremap <leader>w :w!<cr>
 
 " Fast editing of the .vimrc
-map <leader>e :e! ~/.vim/vimrc<cr>
+nnoremap <leader>e :e! ~/.vim/vimrc<cr>
+nnoremap <leader>ev :split $MYVIMRC<cr>
 
 " When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vim/vimrc
+autocmd! bufwritepost vimrc source $MYVIMRC
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == MISC SHORT CUTS 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Leader>w :set filetype=mediawiki<CR>
+noremap <Leader>w :set filetype=mediawiki<CR>
+
+" quick re-arranging of individual lines
+noremap - ddp
+noremap _ ddP
+
+" upper case word
+inoremap <c-u> <esc>gUwi
+nnoremap <c-u> gUw
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == NERD_TREE
@@ -151,10 +165,11 @@ let Tlist_Sort_Type = "name"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == EXPLORER MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" note: *noremap means no recursive mapping
 nnoremap <f1> :BufExplorer<cr>
 nnoremap <f2> :TlistToggle<cr>
 nnoremap <f3> :NERDTreeToggle<cr>
-map <Leader>n :BufExplorer<cr>
+noremap <Leader>n :BufExplorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == MOVING AROUND, TABS AND BUFFERS
@@ -179,7 +194,7 @@ let notes_directory = '~/Dropbox/Notes/'
 set directory=~/.tmp//
 
 " useful binding for ack
-nmap <leader>a <Esc>:Ack!
+nnoremap <leader>a <Esc>:Ack!
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == PDV (phpDocumentor for Vim) 
@@ -203,3 +218,24 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
 set completeopt=menuone,longest,preview
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == LVTHW Practice
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! ShowCat()
+  echom ">^.^<"
+endfunction
+
+call ShowCat()
+
+iabbrev @@ ck@christi3k.net
+
+" go to beginning of line w/o leaving home
+nnoremap H 0
+
+" go to end of line w/o leaving home
+nnoremap L $
+
+" ease leaving insert mode
+inoremap jk <esc>
+

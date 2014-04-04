@@ -102,3 +102,9 @@
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
     ignore = untracked
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
