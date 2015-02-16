@@ -13,9 +13,11 @@ if has("gui_running")
         nnoremap <F4> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
         " remove right scrollbar
         "set guioptions-=r
+        "airline
 else
         "set background=dark
         "set t_Co=256
+        let g:solarized_termcolors=256
 endif
 
 "let g:solarized_termcolors=256
@@ -188,7 +190,8 @@ map <left> :bp<cr>
 " == MISC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " for the notes plugin
-let notes_directory = '~/Dropbox/Notes/'
+"let notes_directory = '~/Dropbox/Notes/'
+let notes_directories = ['~/Dropbox/Notes/']
 
 " set temp directory
 set directory=~/.tmp//
@@ -218,6 +221,7 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 
 set completeopt=menuone,longest,preview
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == LVTHW Practice
