@@ -32,6 +32,9 @@ let g:airline_theme='solarized'
 "syntastic
 let g:syntastic_python_checkers=['pyflakes']
 
+"enable modelines
+set modeline
+
 "store lots of :cmdline history
 set history=1550
 
@@ -157,7 +160,7 @@ let Tlist_Compact_Format = 1
 let Tlist_Enable_Fold_Column = 0
 let Tlist_Exit_OnlyWindow = 0
 let Tlist_WinWidth = 35
-let tlist_php_settings = 'php;c:class;f:Functions'
+let tlist_php_settings = 'php;c:class;f:functions;d:constants;i:interfaces;v:variables'
 "let Tlist_Use_Right_Window=1
 let Tlist_Display_Tag_Scope = 1
 let Tlist_Show_One_File = 1
