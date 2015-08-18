@@ -9,7 +9,7 @@ if has("gui_running")
         set lines=50 columns=125
         colorscheme solarized
         " remove toolbar
-        set guioptions=agiLt
+        set guioptions=agiLtm
         nnoremap <F4> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
         " remove right scrollbar
         "set guioptions-=r
@@ -102,6 +102,9 @@ set laststatus=2
 
 set ruler " Always show current position
 set cmdheight=2 "The commandbar height
+
+" pydict
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 " =======================================
 " OLD
