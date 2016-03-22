@@ -3,9 +3,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
         set background=dark
-        "colors neverland-darker
-        "set gfn=Liberation\ Mono\ for\ Powerline\ 9
-        set gfn=Ubuntu\ Mono\ derivative\ Powerline\ 11
+        set guifont=Roboto\ Mono\ for\ Powerline:h13
         set lines=50 columns=125
         colorscheme solarized
         " remove toolbar
@@ -21,6 +19,9 @@ else
 endif
 
 "let g:solarized_termcolors=256
+
+"dash
+nmap <silent> <leader>s <Plug>DashSearch
 
 "powerline (deprecated in favor of airline)
 "let g:Powerline_symbols = 'fancy'
