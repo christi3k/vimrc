@@ -70,10 +70,6 @@
 	path = bundle/ragtag
     url = https://github.com/tpope/vim-ragtag.git
     ignore = untracked
-[submodule "bundle/pyflakes"]
-	path = bundle/pyflakes
-    url = https://github.com/mitechie/pyflakes-pathogen.git
-    ignore = dirty
 [submodule "bundle/supertab"]
 	path = bundle/supertab
     url = https://github.com/ervandew/supertab.git
