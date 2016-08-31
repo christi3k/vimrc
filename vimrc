@@ -1,9 +1,33 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => System-specifc settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if has("win32")
+  let g:pathogen_blacklist= []
+endif
+
+if has("mac")
+  let g:pathogen_blacklist= []
+endif
+
+if has("unix")
+  let g:pathogen_blacklist= ['dash']
+endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("gui_running")
         set background=dark
-        set guifont=Roboto\ Mono\ for\ Powerline:h13
+
+        " specify font correct way for each system
+        if has("gui_gtk")
+          set guifont=Roboto\ Mono\ for\ Powerline\ 12
+        endif
+        if has("gui_mac")
+          set guifont=Roboto\ Mono\ for\ Powerline:h13
+        endif
+
         set lines=50 columns=125
         colorscheme solarized
         " remove toolbar
