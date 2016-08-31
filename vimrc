@@ -24,7 +24,7 @@ if has("gui_running")
         if has("gui_gtk")
           set guifont=Roboto\ Mono\ for\ Powerline\ 12
         endif
-        if has("gui_mac")
+        if has("mac")
           set guifont=Roboto\ Mono\ for\ Powerline:h13
         endif
 
