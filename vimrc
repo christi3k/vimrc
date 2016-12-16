@@ -225,7 +225,7 @@ map <left> :bp<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " for the notes plugin
 "let notes_directory = '~/Dropbox/Notes/'
-let notes_directories = ['~/Dropbox/Notes/']
+let notes_directories = ['~/SpiderOak\ Hive/Notes/']
 
 " set temp directory
 set directory=~/.tmp//
