@@ -44,6 +44,9 @@ endif
 
 "let g:solarized_termcolors=256
 
+"enable folding
+set foldmethod=syntax
+set foldlevel=99
 "dash
 nmap <silent> <leader>s <Plug>DashSearch
 
@@ -53,6 +56,9 @@ nmap <silent> <leader>s <Plug>DashSearch
 "airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+
+"let g:airline_theme='dark'
 
 "syntastic
 let g:syntastic_python_checkers=['pyflakes']
