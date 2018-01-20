@@ -47,6 +47,9 @@ endif
 "enable folding
 set foldmethod=syntax
 set foldlevel=99
+
+let g:python_highlight_all=1
+
 "dash
 nmap <silent> <leader>s <Plug>DashSearch
 
