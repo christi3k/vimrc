@@ -200,8 +200,6 @@ let g:tagbar_autofocus = 1
 " == EXPLORER MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " note: *noremap means no recursive mapping
-nnoremap <f1> :BufExplorer<cr>
-nnoremap <f3> :NERDTreeToggle<cr>
 noremap <Leader>n :BufExplorer<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
