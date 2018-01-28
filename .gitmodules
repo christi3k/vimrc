@@ -48,11 +48,6 @@
 	path = bundle/delimitMate
     url = https://github.com/vim-scripts/delimitMate.vim.git
     ignore = untracked
-# TODO: remove
-[submodule "bundle/pdv"]
-	path = bundle/pdv
-    url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
-    ignore = dirty
 # fast file navigation
 # https://github.com/wincent/command-t
 [submodule "bundle/command-t"]
