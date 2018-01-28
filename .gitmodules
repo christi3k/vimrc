@@ -1,3 +1,6 @@
+# file system explorer
+# https://github.com/scrooloose/nerdtree
+# TODO: Figure out why nerdtree in here twice
 [submodule "nerdtree"]
 	path = nerdtree
     url = https://github.com/scrooloose/nerdtree.git
@@ -6,46 +9,64 @@
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
     ignore = untracked
+# commenting functions
+# https://github.com/scrooloose/nerdcommenter
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
     ignore = untracked
+# run ack searches from vim
+# https://github.com/mileszs/ack.vim
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
-    ignore = untracked
+  ignore = untracked
+# git wrapper for vim
+# https://github.com/tpope/vim-fugitive
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-    ignore = untracked
+  ignore = untracked
+# file buffer explorer
+# TODO: This hasn't been updated in a while. Find replacement?
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
     url = https://github.com/vim-scripts/bufexplorer.zip.git
     ignore = untracked
+# note-takingn in vim
 [submodule "bundle/notes"]
 	path = bundle/notes
     url = https://github.com/xolox/vim-notes.git
     ignore = untracked
+# manage pair-wise surroundings
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
     ignore = untracked
+# auto closing of tags
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
     url = https://github.com/vim-scripts/delimitMate.vim.git
     ignore = untracked
+# add features for .textile files
+# TODO: remove
 [submodule "bundle/textile"]
 	path = bundle/textile
     url = https://github.com/timcharper/textile.vim.git
     ignore = dirty
+# match more than single chars with %
+# TODO: remove since included with vim > 6
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
     ignore = untracked
+# TODO: remove
 [submodule "bundle/pdv"]
 	path = bundle/pdv
     url = https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim.git
     ignore = dirty
+# fast file navigation
+# https://github.com/wincent/command-t
 [submodule "bundle/command-t"]
 	path = bundle/command-t
     url = https://github.com/wincent/command-t.git
@@ -58,64 +79,102 @@
 	path = bundle/colors-solarized
     url = https://github.com/altercation/vim-colors-solarized.git
     ignore = dirty
+# syntax highlighting for mediawiki markup
 [submodule "bundle/mediawiki"]
 	path = bundle/mediawiki
     url = https://github.com/vim-scripts/mediawiki.git
     ignore = dirty
+# mappings for html, etc. enhances surround
+# https://github.com/tpope/vim-ragtag
 [submodule "bundle/ragtag"]
 	path = bundle/ragtag
     url = https://github.com/tpope/vim-ragtag.git
     ignore = untracked
+# super tab completion
+# https://github.com/ervandew/supertab
 [submodule "bundle/supertab"]
 	path = bundle/supertab
     url = https://github.com/ervandew/supertab.git
     ignore = dirty
+# mimic writeroom in vim
+# TODO: Remove
 [submodule "bundle/vimroom"]
 	path = bundle/vimroom
     url = https://github.com/vim-scripts/vimroom.vim.git
     ignore = dirty
+# show git diff in gutter
+# https://github.com/airblade/vim-gitgutter
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
     url = git://github.com/airblade/vim-gitgutter.git
     ignore = untracked
+# superduper status/tab line
+# https://github.com/vim-airline/vim-airline
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
     ignore = untracked
+# syntax checking hacks
+# https://github.com/vim-syntastic/syntastic
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+# markdown runtime files
+# https://github.com/tpope/vim-markdown
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
+# helper/util functions for this person's other plugins
+# https://github.com/xolox/vim-misc
+# TODO: figure out if this is still needed
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = git@github.com:xolox/vim-misc.git
+# display tags in a window
+# https://github.com/majutsushi/tagbar
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git@github.com:majutsushi/tagbar.git
+# vim session manager
+# https://github.com/vim-scripts/sessionman.vim
 [submodule "bundle/sessionman"]
 	path = bundle/sessionman
 	url = https://github.com/vim-scripts/sessionman.vim.git
+# tab completion for python
+# https://github.com/rkulla/pydiction
+# TODO: figure out how this works with other tab-completions
 [submodule "bundle/pydiction"]
 	path = bundle/pydiction
 	url = https://github.com/rkulla/pydiction.git
+# integration with doc brownwer Zeal
+# https://github.com/KabbAmine/zeavim.vim
+# https://zealdocs.org/
+# TODO: might want to make conditional if only using on non-macOS
 [submodule "bundle/zeavim"]
 	path = bundle/zeavim
 	url = git@github.com:KabbAmine/zeavim.vim.git
   ignore = untracked
+# search Dash from withing vim
+# https://github.com/rizzatti/dash.vim
 [submodule "bundle/dash"]
 	path = bundle/dash
 	url = https://github.com/rizzatti/dash.vim.git
+# snippets! 
+# https://github.com/SirVer/ultisnips
 [submodule "bundle/ultisnips"]
 	path = bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+# snippets for use with ultismips
+# https://github.com/honza/vim-snippets
 [submodule "bundle/vim-snippets"]
 	path = bundle/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
+# themes for airline extension
 [submodule "bundle/vim-airline-themes"]
 	path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+# advanced syntax highlighting for python
+# https://github.com/vim-python/python-syntax
 [submodule "bundle/python-syntax"]
 	path = bundle/python-syntax
 	url = https://github.com/vim-python/python-syntax.git
