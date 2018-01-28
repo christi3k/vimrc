@@ -48,12 +48,6 @@
 	path = bundle/delimitMate
     url = https://github.com/vim-scripts/delimitMate.vim.git
     ignore = untracked
-# match more than single chars with %
-# TODO: remove since included with vim > 6
-[submodule "bundle/matchit"]
-	path = bundle/matchit
-	url = https://github.com/vim-scripts/matchit.zip.git
-    ignore = untracked
 # TODO: remove
 [submodule "bundle/pdv"]
 	path = bundle/pdv
