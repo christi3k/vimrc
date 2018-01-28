@@ -31,7 +31,7 @@
 # TODO: This hasn't been updated in a while. Find replacement?
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
-    url = https://github.com/vim-scripts/bufexplorer.zip.git
+  url = https://github.com/jlanzarotta/bufexplorer.git
     ignore = untracked
 # note-takingn in vim
 [submodule "bundle/notes"]
