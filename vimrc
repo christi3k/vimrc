@@ -189,7 +189,12 @@ map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"nnoremap <F2> :TagbarOpenAutoClose<CR>
 nnoremap <F2> :TagbarToggle<CR>
+" display tagbar on the left
+let g:tagbar_left = 1
+" autofocus on tagbar after opening
+let g:tagbar_autofocus = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == TAGLIST
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
