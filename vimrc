@@ -178,7 +178,6 @@ let NERDTreeWinSize = 40
 let NERDTreeShowBookmarks = 1
 let NERDTreeQuitOnOpen = 1
 
-map <Leader>t :NERDTreeToggle<CR>
 map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -192,7 +191,7 @@ let g:tagbar_left = 1
 let g:tagbar_autofocus = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" == EXPLORER MAPPINGS
+" == BUFEXPLORER MAPPINGS
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " note: *noremap means no recursive mapping
 noremap <Leader>n :BufExplorer<cr>
