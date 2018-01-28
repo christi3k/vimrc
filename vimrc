@@ -195,23 +195,6 @@ nnoremap <F2> :TagbarToggle<CR>
 let g:tagbar_left = 1
 " autofocus on tagbar after opening
 let g:tagbar_autofocus = 1
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" == TAGLIST
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"nnoremap <silent> <F2> :TlistToggle<CR>
-"let Tlist_Close_On_Select = 1
-"let Tlist_GainFocus_On_ToggleOpen = 1
-"let Tlist_Process_File_Always = 1
-"let Tlist_Compact_Format = 1
-"let Tlist_Enable_Fold_Column = 0
-"let Tlist_Exit_OnlyWindow = 0
-"let Tlist_WinWidth = 35
-"let tlist_php_settings = 'php;c:class;f:functions;d:constants;i:interfaces;v:variables'
-"let Tlist_Use_Right_Window=1
-"let Tlist_Display_Tag_Scope = 1
-"let Tlist_Show_One_File = 1
-"let Tlist_Display_Prototype = 1
-"let Tlist_Sort_Type = "name"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == EXPLORER MAPPINGS
