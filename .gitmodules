@@ -156,3 +156,6 @@
 	path = bundle/python-syntax
 	url = https://github.com/vim-python/python-syntax.git
   ignore = untracked
+[submodule "bundle/vim-rhubarb"]
+	path = bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
