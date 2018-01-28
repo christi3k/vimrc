@@ -79,12 +79,6 @@
 	path = bundle/supertab
     url = https://github.com/ervandew/supertab.git
     ignore = dirty
-# mimic writeroom in vim
-# TODO: Remove
-[submodule "bundle/vimroom"]
-	path = bundle/vimroom
-    url = https://github.com/vim-scripts/vimroom.vim.git
-    ignore = dirty
 # show git diff in gutter
 # https://github.com/airblade/vim-gitgutter
 [submodule "bundle/vim-gitgutter"]
