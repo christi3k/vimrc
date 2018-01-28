@@ -240,7 +240,7 @@ let notes_directories = ['~/SpiderOak\ Hive/Notes/']
 set directory=~/.tmp//
 
 " useful binding for ack
-nnoremap <leader>a <Esc>:Ack!
+nnoremap <leader>a <Esc>:Ack!<space>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == PDV (phpDocumentor for Vim) 
