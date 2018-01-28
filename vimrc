@@ -53,15 +53,10 @@ let g:python_highlight_all=1
 "dash
 nmap <silent> <leader>s <Plug>DashSearch
 
-"powerline (deprecated in favor of airline)
-"let g:Powerline_symbols = 'fancy'
-
 "airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
-
-"let g:airline_theme='dark'
 
 "syntastic
 let g:syntastic_python_checkers=['pyflakes']
