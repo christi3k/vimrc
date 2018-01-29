@@ -29,7 +29,8 @@ if has("gui_running")
         endif
 
         set lines=50 columns=125
-        colorscheme solarized
+        colorscheme base16-atelier-cave
+        "colorscheme base16-default-dark
         " remove toolbar
         set guioptions=agiLtm
         nnoremap <F4> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
@@ -55,7 +56,8 @@ nmap <silent> <leader>s <Plug>DashSearch
 
 "airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
+"let g:airline_theme='tomorrow'
+let g:airline_theme='base16'
 let g:airline_solarized_bg='dark'
 
 "syntastic
