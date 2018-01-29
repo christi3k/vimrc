@@ -51,6 +51,9 @@ set foldlevel=99
 
 let g:python_highlight_all=1
 
+"quick access to spellcheck
+:map <F5> :setlocal spell! spelllang=en_us<CR>
+
 "dash
 nmap <silent> <leader>s <Plug>DashSearch
 
