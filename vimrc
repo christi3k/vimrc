@@ -175,7 +175,7 @@ nnoremap <c-u> gUw
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == NERD_TREE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let NERDTreeWinPos = "right"
+let NERDTreeWinPos = "left"
 let NERDTreeWinSize = 40
 let NERDTreeShowBookmarks = 1
 let NERDTreeQuitOnOpen = 1
@@ -188,7 +188,7 @@ map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 "nnoremap <F2> :TagbarOpenAutoClose<CR>
 nnoremap <F2> :TagbarToggle<CR>
 " display tagbar on the left
-let g:tagbar_left = 1
+"let g:tagbar_left = 1
 " autofocus on tagbar after opening
 let g:tagbar_autofocus = 1
 
