@@ -148,7 +148,19 @@ set laststatus=2
 set ruler " Always show current position
 set cmdheight=2 "The commandbar height
 
-" pydict
+" =======================================
+" UltiSnips settings
+" =======================================
+"
+" set directories in which UltiSnips searches
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnippets"]
+
+" set directory for private snippet editing
+let g:UltiSnipsSnippetsDir = "~/.vim/mysnippets"
+
+" =======================================
+" pydiction
+" =======================================
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 " =======================================
