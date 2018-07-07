@@ -1,4 +1,11 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" temporary work around for:
+" https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => System-specifc settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -13,6 +20,13 @@ endif
 if has("unix")
   let g:pathogen_blacklist= ['dash']
 endif
+
+let g:pathogen_blacklist = ['supertab']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Load plugins with Pathogen 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
