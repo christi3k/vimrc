@@ -98,6 +98,14 @@ https://github.com/scrooloose/nerdtree
 
 No additional setup required.
 
+### supertab
+
+`Supertab is a vim plugin which allows you to use <Tab> for all your insert completion needs (:help ins-completion).`
+
+https://github.com/ervandew/supertab
+
+No additional setup required.
+
 ### tagbar
 
 https://github.com/majutsushi/tagbar
