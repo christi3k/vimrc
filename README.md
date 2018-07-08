@@ -144,6 +144,14 @@ https://github.com/tpope/vim-rhubarb
 
 No additional setup required.
 
+### YouCompleteMe
+
+https://github.com/valloric/youcompleteme
+
+Code completion.
+
+[Installation](https://github.com/valloric/youcompleteme#installation).
+
 ### zeavim.vim
 
 https://github.com/KabbAmine/zeavim.vim
