@@ -98,6 +98,14 @@ https://github.com/scrooloose/nerdtree
 
 No additional setup required.
 
+### supertab
+
+`Supertab is a vim plugin which allows you to use <Tab> for all your insert completion needs (:help ins-completion).`
+
+https://github.com/ervandew/supertab
+
+No additional setup required.
+
 ### tagbar
 
 https://github.com/majutsushi/tagbar
@@ -135,6 +143,14 @@ https://github.com/tpope/vim-rhubarb
 "If fugitive.vim is the Git, rhubarb.vim is the Hub."
 
 No additional setup required.
+
+### YouCompleteMe
+
+https://github.com/valloric/youcompleteme
+
+Code completion.
+
+[Installation](https://github.com/valloric/youcompleteme#installation).
 
 ### zeavim.vim
 

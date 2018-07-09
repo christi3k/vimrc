@@ -165,3 +165,6 @@
 [submodule "bundle/vim-hashicorp-tools"]
 	path = bundle/vim-hashicorp-tools
 	url = https://github.com/hashivim/vim-hashicorp-tools.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
