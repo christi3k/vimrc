@@ -33,12 +33,16 @@ rm -rf fonts
 More details on using Git submodules and Tim Pope's Pathogen here:
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 
-`git submodule update --init`
+`git submodule update --init --recursive`
+
+(Use `--recursive` to get nested submodules.)
 
 ### updating plugins
 
 Periodically update all plugins (submodules) with:
 `git submodule foreach git pull origin master`
+
+NB: If you don't want to use _master_ branch for all plugins, you'll need to go into each submodule directory and pull from the branch you want.
 
 ### helpdocs
 
@@ -95,6 +99,14 @@ ld: warning: directory not found for option '-L/BuildRoot/Applications/Xcode.app
 ### NERDtree
 
 https://github.com/scrooloose/nerdtree
+
+No additional setup required.
+
+### SimpylFold
+
+Folding for python files.
+
+https://github.com/tmhedberg/SimpylFold
 
 No additional setup required.
 
