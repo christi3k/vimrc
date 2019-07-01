@@ -57,6 +57,14 @@ https://github.com/mileszs/ack.vim
 
 `brew install ack`
 
+### base16-vim
+
+https://github.com/chriskempson/base16-vim/
+
+Provides base-16 colors for Vim.
+
+No additional setup required.
+
 ### bufexplorer
 
 https://github.com/jlanzarotta/bufexplorer
@@ -95,6 +103,25 @@ ld: warning: directory not found for option '-L/BuildRoot/Applications/Xcode.app
 ld: warning: directory not found for option '-L/BuildRoot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.Internal.sdk/usr/local/lib'
 ```
 
+### dash
+
+https://github.com/rizzatti/dash.vim
+
+Interface for [Dash.app](http://kapeli.com/).
+
+No additional setup required. (Other than needing to have Dash installed.)
+
+### delimitMate
+
+https://github.com/vim-scripts/delimitMate.vim.git
+
+(Note sure if I still need this.)
+
+### fugitive
+
+https://github.com/tpope/vim-fugitive.git
+
+Git wrapper.
 
 ### NERDtree
 
