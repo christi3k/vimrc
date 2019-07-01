@@ -43,7 +43,8 @@ if has("gui_running")
         endif
 
         set lines=50 columns=125
-        colorscheme base16-atelier-cave
+        colorscheme base16-brewer
+        "colorscheme base16-atelier-cave
         "colorscheme base16-default-dark
         " remove toolbar
         set guioptions=agiLtm
