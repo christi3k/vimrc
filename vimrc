@@ -1,4 +1,11 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" temporary work around for:
+" https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => System-specifc settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -13,6 +20,13 @@ endif
 if has("unix")
   let g:pathogen_blacklist= ['dash']
 endif
+
+let g:pathogen_blacklist = ['pydiction']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Load plugins with Pathogen 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -137,7 +151,37 @@ set laststatus=2
 set ruler " Always show current position
 set cmdheight=2 "The commandbar height
 
-" pydict
+" =======================================
+" UltiSnips settings
+" =======================================
+"
+" set directories in which UltiSnips searches
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnippets"]
+
+" set directory for private snippet editing
+let g:UltiSnipsSnippetsDir = "~/.vim/mysnippets"
+
+" =======================================
+" YouCompleteMe settings
+" =======================================
+"
+" https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme#22253548
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+"let g:UltiSnipsJumpForwardTrigger = "<Right>" 
+"let g:UltiSnipsJumpBackwardTrigger = "<Left>"
+
+" =======================================
+" pydiction
+" =======================================
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 " =======================================
