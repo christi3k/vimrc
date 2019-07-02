@@ -167,7 +167,8 @@
 	url = https://github.com/hashivim/vim-hashicorp-tools.git
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
+  url = https://github.com/Valloric/YouCompleteMe.git
+  ignore = dirty
 [submodule "bundle/SimpylFold"]
 	path = bundle/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold.git
