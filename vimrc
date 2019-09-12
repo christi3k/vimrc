@@ -36,10 +36,10 @@ if has("gui_running")
 
         " specify font correct way for each system
         if has("gui_gtk")
-          set guifont=Roboto\ Mono\ for\ Powerline\ 12
+          set guifont=Roboto\ Mono\ for\ Powerline\ 14
         endif
         if has("mac")
-          set guifont=Roboto\ Mono\ for\ Powerline:h13
+          set guifont=Roboto\ Mono\ for\ Powerline:h14
         endif
 
         set lines=50 columns=125
@@ -70,7 +70,7 @@ let g:python_highlight_all=1
 :map <F5> :setlocal spell! spelllang=en_us<CR>
 
 "dash
-nmap <silent> <leader>s <Plug>DashSearch
+:nmap <silent> <leader>s <Plug>DashSearch
 
 "airline
 let g:airline_powerline_fonts = 1
@@ -151,6 +151,12 @@ set laststatus=2
 
 set ruler " Always show current position
 set cmdheight=2 "The commandbar height
+
+" =======================================
+" golang-specific config
+" =======================================
+autocmd FileType go setlocal noexpandtab
+
 
 " =======================================
 " UltiSnips settings
@@ -239,6 +245,35 @@ nnoremap <F2> :TagbarToggle<CR>
 let g:tagbar_left = 1
 " autofocus on tagbar after opening
 let g:tagbar_autofocus = 1
+
+" configure golang tags
+let g:tagbar_type_go = {
+	\ 'ctagstype' : 'go',
+	\ 'kinds'     : [
+		\ 'p:package',
+		\ 'i:imports:1',
+		\ 'c:constants',
+		\ 'v:variables',
+		\ 't:types',
+		\ 'n:interfaces',
+		\ 'w:fields',
+		\ 'e:embedded',
+		\ 'm:methods',
+		\ 'r:constructor',
+		\ 'f:functions'
+	\ ],
+	\ 'sro' : '.',
+	\ 'kind2scope' : {
+		\ 't' : 'ctype',
+		\ 'n' : 'ntype'
+	\ },
+	\ 'scope2kind' : {
+		\ 'ctype' : 't',
+		\ 'ntype' : 'n'
+	\ },
+	\ 'ctagsbin'  : 'gotags',
+	\ 'ctagsargs' : '-sort -silent'
+\ }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == BUFEXPLORER MAPPINGS
