@@ -98,12 +98,6 @@
 	url = https://github.com/scrooloose/syntastic.git
 # markdown runtime files
 # https://github.com/tpope/vim-markdown
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = https://github.com/tpope/vim-markdown.git
-# helper/util functions for this person's other plugins
-# https://github.com/xolox/vim-misc
-# TODO: figure out if this is still needed
 [submodule "bundle/vim-misc"]
 	path = bundle/vim-misc
 	url = git@github.com:xolox/vim-misc.git
@@ -175,3 +169,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/ansible-vim"]
+	path = bundle/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim.git
