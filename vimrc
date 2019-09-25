@@ -302,6 +302,7 @@ let g:tagbar_type_go = {
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " note: *noremap means no recursive mapping
 noremap <Leader>n :BufExplorer<cr>
+let g:bufExplorerShowRelativePath=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == MOVING AROUND, TABS AND BUFFERS
