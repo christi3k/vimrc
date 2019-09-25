@@ -43,7 +43,8 @@ if has("gui_running")
         endif
 
         set lines=50 columns=125
-        colorscheme base16-brewer
+        colorscheme base16-atelier-heath
+        "colorscheme base16-brewer
         "colorscheme base16-atelier-cave
         "colorscheme base16-default-dark
         " remove toolbar
@@ -80,6 +81,7 @@ let g:airline_solarized_bg='dark'
 
 "syntastic
 let g:syntastic_python_checkers=['pyflakes']
+let g:syntastic_ansible_checkers=['ansible', 'ansible-ansible_lint']
 
 "enable modelines
 set modeline
@@ -167,6 +169,16 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
+
+" =======================================
+" vim-ansible
+" =======================================
+let g:ansible_attribute_highlight = "ab"
+let g:ansible_name_highlight = 'b'
+let g:ansible_extra_keywords_highlight = 1
+
+
+
 
 " =======================================
 " UltiSnips settings
