@@ -156,7 +156,17 @@ set cmdheight=2 "The commandbar height
 " golang-specific config
 " =======================================
 autocmd FileType go setlocal noexpandtab
+autocmd FileType go setlocal tabstop=4
 
+" =======================================
+" vim-go config
+" =======================================
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
 
 " =======================================
 " UltiSnips settings
