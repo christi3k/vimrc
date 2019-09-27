@@ -57,6 +57,10 @@ https://github.com/mileszs/ack.vim
 
 `brew install ack`
 
+### ansible-vim
+
+[pearofducks/ansible-vim: A vim plugin for syntax highlighting Ansible's common filetypes](https://github.com/pearofducks/ansible-vim)
+
 ### base16-vim
 
 https://github.com/chriskempson/base16-vim/
@@ -171,7 +175,7 @@ No addtiional setup required.
 
 ### vim-markdown
 
-https://github.com/tpope/vim-markdown
+[plasticboy/vim-markdown: Markdown Vim Mode](https://github.com/plasticboy/vim-markdown)
 
 No addtiional setup required.
 
