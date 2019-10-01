@@ -179,6 +179,12 @@ No addtiional setup required.
 
 No addtiional setup required.
 
+### vim-opel-url
+
+[dhruvasagar/vim-open-url: A simple plugin for opening urls in browser](https://github.com/dhruvasagar/vim-open-url)
+
+(mostly using because of netrw bug where gx uses curl to download and edit url rather than opening)
+
 ### vim-rhubarb
 
 https://github.com/tpope/vim-rhubarb
