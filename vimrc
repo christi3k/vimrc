@@ -82,6 +82,7 @@ let g:airline_solarized_bg='dark'
 "syntastic
 let g:syntastic_python_checkers=['pyflakes']
 let g:syntastic_ansible_checkers=['ansible', 'ansible-ansible_lint']
+let g:syntastic_sh_checkers=['shellcheck']
 
 "enable modelines
 set modeline
