@@ -178,3 +178,9 @@
 [submodule "bundle/vim-open-url"]
 	path = bundle/vim-open-url
 	url = https://github.com/dhruvasagar/vim-open-url.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-devicons"]
+	path = bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
