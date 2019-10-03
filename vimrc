@@ -14,14 +14,14 @@ if has("win32")
 endif
 
 if has("mac")
-  let g:pathogen_blacklist= []
+  let g:pathogen_blacklist= ['vim-buffet']
 endif
 
 if has("unix")
   let g:pathogen_blacklist= ['dash']
 endif
 
-let g:pathogen_blacklist = ['pydiction']
+let g:pathogen_blacklist = ['pydiction', 'vim-buffet']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Load plugins with Pathogen 
@@ -39,11 +39,13 @@ if has("gui_running")
           set guifont=Roboto\ Mono\ for\ Powerline\ 14
         endif
         if has("mac")
-          set guifont=Roboto\ Mono\ for\ Powerline:h14
+          set guifont=RobotoMono\ Nerd\ Font:h14
+          "set guifont=Roboto\ Mono\ for\ Powerline:h14
         endif
 
-        set lines=50 columns=125
-        colorscheme base16-atelier-heath
+        set lines=60 columns=145
+        colorscheme base16-outrun-dark
+        "colorscheme base16-atelier-heath
         "colorscheme base16-brewer
         "colorscheme base16-atelier-cave
         "colorscheme base16-default-dark
@@ -61,6 +63,8 @@ endif
 
 "let g:solarized_termcolors=256
 
+set encoding=UTF-8
+
 "enable folding
 set foldmethod=syntax
 set foldlevel=99
@@ -77,7 +81,18 @@ let g:python_highlight_all=1
 let g:airline_powerline_fonts = 1
 "let g:airline_theme='tomorrow'
 let g:airline_theme='base16'
-let g:airline_solarized_bg='dark'
+"let g:airline_solarized_bg='dark'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
+" buffet
+" note: don't use buffer because airline does a good enough job
+"let g:buffet_show_index = 1
+"let g:buffet_powerline_separators = 1
+"let g:buffet_tab_icon = "\uf00a"
+"let g:buffet_left_trunc_icon = "\uf0a8"
+"let g:buffet_right_trunc_icon = "\uf0a9"
+
 
 "syntastic
 let g:syntastic_python_checkers=['pyflakes']
@@ -154,6 +169,8 @@ set laststatus=2
 
 set ruler " Always show current position
 set cmdheight=2 "The commandbar height
+
+let g:github_enterprise_urls = ['git@github.office.opendns.com']
 
 " =======================================
 " golang-specific config

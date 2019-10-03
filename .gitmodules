@@ -184,3 +184,6 @@
 [submodule "bundle/vim-devicons"]
 	path = bundle/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "bundle/vim-buffet"]
+	path = bundle/vim-buffet
+	url = https://github.com/bagrat/vim-buffet.git
