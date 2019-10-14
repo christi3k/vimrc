@@ -83,7 +83,11 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
 "let g:airline_solarized_bg='dark'
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+"let g:airline#extensions#tabline#formatter = 'short_path'
+let g:airline#extensions#tabline#fnamecollapse = 1
+let g:airline#extensions#tabline#show_close_button = 0
+let g:airline#extensions#taboo#enabled = 1
 
 " buffet
 " note: don't use buffer because airline does a good enough job
@@ -173,6 +177,18 @@ set cmdheight=2 "The commandbar height
 let g:github_enterprise_urls = ['git@github.office.opendns.com']
 
 " =======================================
+" vim-devicons
+" =======================================
+
+"let g:webdevicons_conceal_nerdtree_brackets = 1
+"let g:WebDevIconsUnicodeGlyphDoubleWidth = 0
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
+
+"
+
+
+" =======================================
 " golang-specific config
 " =======================================
 autocmd FileType go setlocal noexpandtab
@@ -189,14 +205,10 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 
 " =======================================
-" vim-ansible
+" vim-markdown
 " =======================================
-let g:ansible_attribute_highlight = "ab"
-let g:ansible_name_highlight = 'b'
-let g:ansible_extra_keywords_highlight = 1
 
-
-
+map <Plug> <Plug>Markdown_MoveToCurHeader
 
 " =======================================
 " UltiSnips settings
@@ -273,6 +285,8 @@ let NERDTreeWinPos = "right"
 let NERDTreeWinSize = 40
 let NERDTreeShowBookmarks = 1
 let NERDTreeQuitOnOpen = 1
+let NERDTreeChDirMode = 2
+
 
 map <Leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
@@ -321,6 +335,7 @@ let g:tagbar_type_go = {
 " note: *noremap means no recursive mapping
 noremap <Leader>n :BufExplorer<cr>
 let g:bufExplorerShowRelativePath=1
+let g:bufExplorerShowNoName=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == MOVING AROUND, TABS AND BUFFERS

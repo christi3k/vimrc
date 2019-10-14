@@ -187,3 +187,9 @@
 [submodule "bundle/vim-buffet"]
 	path = bundle/vim-buffet
 	url = https://github.com/bagrat/vim-buffet.git
+[submodule "bundle/vim-bbye"]
+	path = bundle/vim-bbye
+	url = https://github.com/moll/vim-bbye.git
+[submodule "bundle/taboo"]
+	path = bundle/taboo
+	url = https://github.com/gcmt/taboo.vim.git
