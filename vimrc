@@ -102,6 +102,8 @@ let g:airline#extensions#taboo#enabled = 1
 let g:syntastic_python_checkers=['pyflakes']
 let g:syntastic_ansible_checkers=['ansible', 'ansible-ansible_lint']
 let g:syntastic_sh_checkers=['shellcheck']
+let g:syntastic_make_checkers = ['gnumake']
+
 
 "enable modelines
 set modeline

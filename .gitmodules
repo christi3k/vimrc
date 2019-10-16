@@ -193,3 +193,6 @@
 [submodule "bundle/taboo"]
 	path = bundle/taboo
 	url = https://github.com/gcmt/taboo.vim.git
+[submodule "bundle/syntastic-extras"]
+	path = bundle/syntastic-extras
+	url = https://github.com/myint/syntastic-extras.git
