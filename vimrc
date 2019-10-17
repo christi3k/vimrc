@@ -21,7 +21,7 @@ if has("unix")
   let g:pathogen_blacklist= ['dash']
 endif
 
-let g:pathogen_blacklist = ['pydiction', 'vim-buffet', 'supertab', 'ultisnips', 'YouCompleteMe']
+let g:pathogen_blacklist = ['pydiction', 'vim-buffet']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Load plugins with Pathogen 
