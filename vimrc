@@ -65,6 +65,14 @@ endif
 
 set encoding=UTF-8
 
+"use M- for Option/alt
+" and D- for command
+" (not sure what this does to special char entry)
+set macmeta
+
+" close preview window after omnicompletion
+autocmd CompleteDone * pclose
+
 "enable folding
 set foldmethod=syntax
 set foldlevel=99
@@ -237,7 +245,9 @@ let g:ycm_add_preview_to_completeopt = 1
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<c-tab>"
-let g:UltiSnipsListSnippets = "<c-space>"
+let g:UltiSnipsListSnippets = "<M-l>"
+
+
 "let g:UltiSnipsJumpForwardTrigger = "<c-tab>"
 "let g:UltiSnipsJumpBackwardTrigger = "<cs-tab>"
 
