@@ -14,14 +14,14 @@ if has("win32")
 endif
 
 if has("mac")
-  let g:pathogen_blacklist= ['vim-buffet']
+  "let g:pathogen_blacklist= ['vim-buffet']
 endif
 
 if has("unix")
   let g:pathogen_blacklist= ['dash']
 endif
 
-let g:pathogen_blacklist = ['pydiction', 'vim-buffet']
+let g:pathogen_blacklist = ['pydiction', 'vim-buffet', 'supertab', 'ultisnips', 'YouCompleteMe']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Load plugins with Pathogen 
@@ -195,6 +195,8 @@ let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
 " =======================================
 autocmd FileType go setlocal noexpandtab
 autocmd FileType go setlocal tabstop=4
+autocmd FileType go setlocal shiftwidth=4
+autocmd FileType go setlocal softtabstop=4
 
 " =======================================
 " vim-go config
@@ -230,12 +232,14 @@ let g:UltiSnipsSnippetsDir = "~/.vim/mysnippets"
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
+"let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:ycm_add_preview_to_completeopt = 1
 
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsExpandTrigger = "<c-tab>"
+let g:UltiSnipsListSnippets = "<c-space>"
+"let g:UltiSnipsJumpForwardTrigger = "<c-tab>"
+"let g:UltiSnipsJumpBackwardTrigger = "<cs-tab>"
 
 "let g:UltiSnipsJumpForwardTrigger = "<Right>" 
 "let g:UltiSnipsJumpBackwardTrigger = "<Left>"
@@ -375,8 +379,8 @@ noremap <leader>m <Esc>:CommandTBuffer<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == SuperTab & Python misc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-au FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
+"au FileType python set omnifunc=pythoncomplete#Complete
+"let g:SuperTabDefaultCompletionType = "context"
 
 set completeopt=menuone,longest,preview
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
