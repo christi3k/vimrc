@@ -196,3 +196,6 @@
 [submodule "bundle/syntastic-extras"]
 	path = bundle/syntastic-extras
 	url = https://github.com/myint/syntastic-extras.git
+[submodule "bundle/vim-startify"]
+	path = bundle/vim-startify
+	url = https://github.com/mhinz/vim-startify.git
