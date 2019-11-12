@@ -238,15 +238,16 @@ let g:UltiSnipsSnippetsDir = "~/.vim/mysnippets"
 "
 " https://stackoverflow.com/questions/14896327/ultisnips-and-youcompleteme#22253548
 " make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:ycm_key_list_select_completion = ['<TAB>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<S-TAB>', '<C-p>', '<Up>']
 "let g:SuperTabDefaultCompletionType = '<C-n>'
 let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<c-tab>"
 let g:UltiSnipsListSnippets = "<M-l>"
-
 
 "let g:UltiSnipsJumpForwardTrigger = "<c-tab>"
 "let g:UltiSnipsJumpBackwardTrigger = "<cs-tab>"
@@ -415,3 +416,5 @@ nnoremap L $
 " ease leaving insert mode
 inoremap jk <esc>
 
+" open markdown in Typora
+nnoremap <leader>o <Esc>:silent !open -a Typora '%'<CR>
