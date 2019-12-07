@@ -83,7 +83,7 @@ let g:python_highlight_all=1
 :map <F5> :setlocal spell! spelllang=en_us<CR>
 
 "dash
-:nmap <silent> <leader>s <Plug>DashSearch
+:nmap <silent> <leader>l <Plug>DashSearch
 
 "airline
 let g:airline_powerline_fonts = 1
@@ -111,6 +111,7 @@ let g:syntastic_python_checkers=['pyflakes']
 let g:syntastic_ansible_checkers=['ansible', 'ansible-ansible_lint']
 let g:syntastic_sh_checkers=['shellcheck']
 let g:syntastic_make_checkers = ['gnumake']
+let g:syntastic_markdown_checkers = ['remark_lint']
 
 
 "enable modelines
@@ -245,6 +246,18 @@ let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar': 1,
+      \ 'notes': 1,
+      \ 'netrw': 1,
+      \ 'unite': 1,
+      \ 'text': 1,
+      \ 'vimwiki': 1,
+      \ 'pandoc': 1,
+      \ 'infolog': 1,
+      \ 'mail': 1
+      \}
+
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<c-tab>"
 let g:UltiSnipsListSnippets = "<M-l>"
@@ -285,7 +298,7 @@ autocmd! bufwritepost vimrc source $MYVIMRC
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == MISC SHORT CUTS 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-noremap <Leader>w :set filetype=mediawiki<CR>
+"noremap <Leader>w :set filetype=mediawiki<CR>
 
 " quick re-arranging of individual lines
 noremap - ddp
@@ -364,8 +377,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Use the arrows to something usefull
-map <right> :bn<cr>
-map <left> :bp<cr>
+map <right> :tabn<cr>
+map <left> :tabp<cr>
+map <S-right> :bn<cr>
+map <S-left> :bp<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == MISC
@@ -418,3 +433,7 @@ inoremap jk <esc>
 
 " open markdown in Typora
 nnoremap <leader>o <Esc>:silent !open -a Typora '%'<CR>
+
+" generate markdown ToC
+nnoremap <leader>mt <Esc>:silent !markdown-toc -i '%' --bullets="-"<CR>
+
