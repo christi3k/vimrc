@@ -112,6 +112,7 @@ let g:syntastic_ansible_checkers=['ansible', 'ansible-ansible_lint']
 let g:syntastic_sh_checkers=['shellcheck']
 let g:syntastic_make_checkers = ['gnumake']
 let g:syntastic_markdown_checkers = ['remark_lint']
+let g:syntastic_yaml_checkers = ['yamllint']
 
 
 "enable modelines
@@ -197,7 +198,20 @@ let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 0
 
 "
+" =======================================
+" startify
+" =======================================
+let g:startify_lists = [
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'files',     'header': ['   MRU']            },
+      "\ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
 
+let g:startify_bookmarks = [ '~/Projects/compute-vm', '~/.zshrc' ]
+
+let g:startify_files_number = 15
 
 " =======================================
 " golang-specific config
@@ -246,17 +260,17 @@ let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_seed_identifiers_with_syntax = 1
 
-let g:ycm_filetype_blacklist = {
-      \ 'tagbar': 1,
-      \ 'notes': 1,
-      \ 'netrw': 1,
-      \ 'unite': 1,
-      \ 'text': 1,
-      \ 'vimwiki': 1,
-      \ 'pandoc': 1,
-      \ 'infolog': 1,
-      \ 'mail': 1
-      \}
+"let g:ycm_filetype_blacklist = {
+      "\ 'tagbar': 1,
+      "\ 'notes': 1,
+      "\ 'netrw': 1,
+      "\ 'unite': 1,
+      "\ 'text': 1,
+      "\ 'vimwiki': 1,
+      "\ 'pandoc': 1,
+      "\ 'infolog': 1,
+      "\ 'mail': 1
+      "\}
 
 " better key bindings for UltiSnipsExpandTrigger
 let g:UltiSnipsExpandTrigger = "<c-tab>"
@@ -272,6 +286,12 @@ let g:UltiSnipsListSnippets = "<M-l>"
 " pydiction
 " =======================================
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+
+" =======================================
+" vim-ansible 
+" =======================================
+" remedies annoying intent behavior
+let g:ansible_unindent_after_newline = 1
 
 " =======================================
 " OLD
@@ -435,5 +455,5 @@ inoremap jk <esc>
 nnoremap <leader>o <Esc>:silent !open -a Typora '%'<CR>
 
 " generate markdown ToC
-nnoremap <leader>mt <Esc>:silent !markdown-toc -i '%' --bullets="-"<CR>
+nnoremap <leader>mt <Esc>:silent !markdown-toc -i '%' --bullets="*"<CR>
 
