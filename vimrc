@@ -107,11 +107,11 @@ let g:airline#extensions#taboo#enabled = 1
 
 
 "syntastic
-let g:syntastic_python_checkers=['pyflakes']
+let g:syntastic_python_checkers=['pycodestyle']
 let g:syntastic_ansible_checkers=['ansible', 'ansible-ansible_lint']
 let g:syntastic_sh_checkers=['shellcheck']
 let g:syntastic_make_checkers = ['gnumake']
-let g:syntastic_markdown_checkers = ['remark_lint']
+"let g:syntastic_markdown_checkers = ['remark_lint']
 let g:syntastic_yaml_checkers = ['yamllint']
 
 
@@ -276,11 +276,9 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:UltiSnipsExpandTrigger = "<c-tab>"
 let g:UltiSnipsListSnippets = "<M-l>"
 
-"let g:UltiSnipsJumpForwardTrigger = "<c-tab>"
-"let g:UltiSnipsJumpBackwardTrigger = "<cs-tab>"
-
-"let g:UltiSnipsJumpForwardTrigger = "<Right>" 
-"let g:UltiSnipsJumpBackwardTrigger = "<Left>"
+"default:
+"g:UltiSnipsJumpForwardTrigger          <c-j>
+"g:UltiSnipsJumpBackwardTrigger         <c-k>
 
 " =======================================
 " pydiction
@@ -327,6 +325,9 @@ noremap _ ddP
 " upper case word
 inoremap <c-u> <esc>gUwi
 nnoremap <c-u> gUw
+
+" make writing functions less annoying
+inoremap <C-Return> <CR><CR><C-o>k<Tab>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == NERD_TREE
@@ -432,6 +433,10 @@ set completeopt=menuone,longest,preview
 let g:SuperTabNoCompleteAfter = ['^', ',', '\s']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == delimitMate
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == LVTHW Practice
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! ShowCat()
@@ -450,6 +455,13 @@ nnoremap L $
 
 " ease leaving insert mode
 inoremap jk <esc>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" == helper shortcuts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" normal window mode in terminal
+tnoremap <c-b> <c-\><c-n>
 
 " open markdown in Typora
 nnoremap <leader>o <Esc>:silent !open -a Typora '%'<CR>
