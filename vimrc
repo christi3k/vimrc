@@ -419,6 +419,7 @@ nnoremap <leader>a <Esc>:Ack!<space>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " == CommandT Plugin 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:CommandTPreferredImplementation='ruby'
 noremap <leader>t <Esc>:CommandT<CR>
 noremap <leader>T <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>

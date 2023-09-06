@@ -133,6 +133,20 @@ https://github.com/scrooloose/nerdtree
 
 No additional setup required.
 
+### python syntax
+
+https://github.com/vim-python/python-syntax
+
+### ragtag
+
+https://github.com/tpope/vim-ragtag
+
+> A set of mappings for HTML, XML, PHP, ASP, eRuby, JSP, and more (formerly allml)
+
+### rigel (colorscheme)
+
+https://github.com/Rigellute/rigel
+
 ### SimpylFold
 
 Folding for python files.
@@ -148,6 +162,24 @@ No additional setup required.
 https://github.com/ervandew/supertab
 
 No additional setup required.
+
+### surround
+
+https://github.com/tpope/vim-surround
+
+### syntastic
+
+https://github.com/vim-syntastic/syntastic
+
+DEPRECATED
+
+Consider switching to: https://github.com/dense-analysis/ale
+
+### taboo
+
+https://github.com/gcmt/taboo.vim
+
+> Taboo aims to ease the way you set the vim tabline. In addition, Taboo provides fews useful utilities for renaming tabs.
 
 ### tagbar
 
@@ -167,11 +199,48 @@ https://github.com/vim-airline/vim-airline
 
 No additional setup required.
 
+### vim-airline-themes
+
+https://github.com/vim-airline/vim-airline-themes
+
+### vim-bbye
+
+https://github.com/moll/vim-bbye
+
+> Bbye allows you to do delete buffers (close files) without closing your windows or messing up your layout.
+
+### vim-buffer
+
+https://github.com/bagrat/vim-buffet
+
+> Brings you the IDE-like tabs into Vim, for easy navigation, and a nice, customizable look
+
+### vim-colorscheme-switcher
+
+https://github.com/xolox/vim-colorscheme-switcher
+
+### vim-devicons
+
+https://github.com/ryanoasis/vim-devicons
+
+Adds icons to plugins.
+
 ### vim-gitgutter
 
 https://github.com/airblade/vim-gitgutter
 
 No addtiional setup required.
+
+### vim-go
+
+https://github.com/fatih/vim-go
+
+Go language support for Vim.
+
+### vim-hashicorp-tools
+
+https://github.com/hashivim/vim-hashicorp-tools
+
 
 ### vim-markdown
 
@@ -179,7 +248,13 @@ No addtiional setup required.
 
 No addtiional setup required.
 
-### vim-opel-url
+### vim-misc
+
+https://github.com/xolox/vim-misc
+
+Not sure if this is still needed.
+
+### vim-open-url
 
 [dhruvasagar/vim-open-url: A simple plugin for opening urls in browser](https://github.com/dhruvasagar/vim-open-url)
 
@@ -192,6 +267,36 @@ https://github.com/tpope/vim-rhubarb
 "If fugitive.vim is the Git, rhubarb.vim is the Hub."
 
 No additional setup required.
+
+### vim-snippets
+
+https://github.com/honza/vim-snippets
+
+Snippets files for various programming languages.
+
+### vim-startify
+
+https://github.com/mhinz/vim-startify
+
+The fancy start screen for Vim.
+
+### vim-table-mode
+
+https://github.com/dhruvasagar/vim-table-mode
+
+VIM Table Mode for instant table creation.
+
+### vim-unimpaired
+
+https://github.com/tpope/vim-unimpaired
+
+Pairs of handy bracket mappings.
+
+### vim-which-key
+
+https://github.com/liuchengxu/vim-which-key
+
+Vim plugin that shows keybindings in popup.
 
 ### YouCompleteMe
 
