@@ -6,52 +6,52 @@
     url = https://github.com/scrooloose/nerdtree.git
     ignore = untracked
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = pack/all/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
     ignore = untracked
 # commenting functions
 # https://github.com/scrooloose/nerdcommenter
 [submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
+	path = pack/all/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
     ignore = untracked
 # run ack searches from vim
 # https://github.com/mileszs/ack.vim
 [submodule "bundle/ack"]
-	path = bundle/ack
+	path = pack/all/start/ack
 	url = https://github.com/mileszs/ack.vim.git
   ignore = untracked
 # git wrapper for vim
 # https://github.com/tpope/vim-fugitive
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
+	path = pack/all/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
   ignore = untracked
 # file buffer explorer
 # TODO: This hasn't been updated in a while. Find replacement?
 [submodule "bundle/bufexplorer"]
-	path = bundle/bufexplorer
+	path = pack/all/start/bufexplorer
   url = https://github.com/jlanzarotta/bufexplorer.git
     ignore = untracked
 # note-takingn in vim
 [submodule "bundle/notes"]
-	path = bundle/notes
+	path = pack/all/start/notes
     url = https://github.com/xolox/vim-notes.git
     ignore = untracked
 # manage pair-wise surroundings
 [submodule "bundle/surround"]
-	path = bundle/surround
+	path = pack/all/start/surround
 	url = https://github.com/tpope/vim-surround.git
     ignore = untracked
 # auto closing of tags
 [submodule "bundle/delimitMate"]
-	path = bundle/delimitMate
+	path = pack/all/start/delimitMate
     url = https://github.com/vim-scripts/delimitMate.vim.git
     ignore = untracked
 # fast file navigation
 # https://github.com/wincent/command-t
 [submodule "bundle/command-t"]
-	path = bundle/command-t
+	path = pack/all/start/command-t
     url = https://github.com/wincent/command-t.git
     ignore = dirty
 [submodule "vim-colors-solarized"]
@@ -59,7 +59,7 @@
     url = https://github.com/altercation/vim-colors-solarized.git
     ignore = dirty
 [submodule "bundle/ragtag"]
-	path = bundle/ragtag
+	path = pack/all/start/ragtag
     url = https://github.com/tpope/vim-ragtag.git
     ignore = untracked
 # super tab completion
@@ -71,134 +71,134 @@
 # show git diff in gutter
 # https://github.com/airblade/vim-gitgutter
 [submodule "bundle/vim-gitgutter"]
-  path = bundle/vim-gitgutter
+	path = pack/all/start/vim-gitgutter
     url = https://github.com/airblade/vim-gitgutter.git
     ignore = untracked
 # superduper status/tab line
 # https://github.com/vim-airline/vim-airline
 [submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
+	path = pack/all/start/vim-airline
 	url = https://github.com/bling/vim-airline.git
     ignore = untracked
 # syntax checking hacks
 # https://github.com/vim-syntastic/syntastic
 [submodule "bundle/syntastic"]
-	path = bundle/syntastic
+	path = pack/all/start/syntastic
 	url = https://github.com/scrooloose/syntastic.git
 # markdown runtime files
 # https://github.com/tpope/vim-markdown
 [submodule "bundle/vim-misc"]
-	path = bundle/vim-misc
+	path = pack/all/start/vim-misc
 	url = git@github.com:xolox/vim-misc.git
 # display tags in a window
 # https://github.com/majutsushi/tagbar
 [submodule "bundle/tagbar"]
-	path = bundle/tagbar
+	path = pack/all/start/tagbar
 	url = git@github.com:majutsushi/tagbar.git
 # vim session manager
 # https://github.com/vim-scripts/sessionman.vim
 [submodule "bundle/sessionman"]
-	path = bundle/sessionman
+	path = pack/all/start/sessionman
 	url = https://github.com/vim-scripts/sessionman.vim.git
 # tab completion for python
 # https://github.com/rkulla/pydiction
 # TODO: figure out how this works with other tab-completions
 [submodule "bundle/pydiction"]
-	path = bundle/pydiction
+	path = pack/all/start/pydiction
 	url = https://github.com/rkulla/pydiction.git
 # integration with doc brownwer Zeal
 # https://github.com/KabbAmine/zeavim.vim
 # https://zealdocs.org/
 # TODO: might want to make conditional if only using on non-macOS
 [submodule "bundle/zeavim"]
-	path = bundle/zeavim
+	path = pack/all/start/zeavim
 	url = git@github.com:KabbAmine/zeavim.vim.git
   ignore = untracked
 # search Dash from withing vim
 # https://github.com/rizzatti/dash.vim
 [submodule "bundle/dash"]
-	path = bundle/dash
+	path = pack/all/start/dash
 	url = https://github.com/rizzatti/dash.vim.git
 # snippets! 
 # https://github.com/SirVer/ultisnips
 [submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
+	path = pack/all/start/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
 # snippets for use with ultismips
 # https://github.com/honza/vim-snippets
 [submodule "bundle/vim-snippets"]
-	path = bundle/vim-snippets
+	path = pack/all/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
 # themes for airline extension
 [submodule "bundle/vim-airline-themes"]
-	path = bundle/vim-airline-themes
+	path = pack/all/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 # advanced syntax highlighting for python
 # https://github.com/vim-python/python-syntax
 [submodule "bundle/python-syntax"]
-	path = bundle/python-syntax
+	path = pack/all/start/python-syntax
 	url = https://github.com/vim-python/python-syntax.git
   ignore = untracked
 [submodule "bundle/vim-rhubarb"]
-	path = bundle/vim-rhubarb
+	path = pack/all/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
 [submodule "bundle/base16-vim"]
-	path = bundle/base16-vim
+	path = pack/all/start/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
 [submodule "bundle/vim-hashicorp-tools"]
-	path = bundle/vim-hashicorp-tools
+	path = pack/all/start/vim-hashicorp-tools
 	url = https://github.com/hashivim/vim-hashicorp-tools.git
 [submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
+	path = pack/all/start/YouCompleteMe
   url = https://github.com/Valloric/YouCompleteMe.git
   ignore = dirty
 [submodule "bundle/SimpylFold"]
-	path = bundle/SimpylFold
+	path = pack/all/start/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold.git
 	ignore = dirty
 [submodule "bundle/vim-go"]
-	path = bundle/vim-go
+	path = pack/all/start/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "bundle/ansible-vim"]
-	path = bundle/ansible-vim
+	path = pack/all/start/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim.git
 [submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
+	path = pack/all/start/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/vim-open-url"]
-	path = bundle/vim-open-url
+	path = pack/all/start/vim-open-url
 	url = https://github.com/dhruvasagar/vim-open-url.git
 [submodule "bundle/vim-unimpaired"]
-	path = bundle/vim-unimpaired
+	path = pack/all/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/vim-devicons"]
-	path = bundle/vim-devicons
+	path = pack/all/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
 [submodule "bundle/vim-buffet"]
-	path = bundle/vim-buffet
+	path = pack/all/start/vim-buffet
 	url = https://github.com/bagrat/vim-buffet.git
 [submodule "bundle/vim-bbye"]
-	path = bundle/vim-bbye
+	path = pack/all/start/vim-bbye
 	url = https://github.com/moll/vim-bbye.git
 [submodule "bundle/taboo"]
-	path = bundle/taboo
+	path = pack/all/start/taboo
 	url = https://github.com/gcmt/taboo.vim.git
 [submodule "bundle/syntastic-extras"]
-	path = bundle/syntastic-extras
+	path = pack/all/start/syntastic-extras
 	url = https://github.com/myint/syntastic-extras.git
 	ignore = dirty
 [submodule "bundle/vim-startify"]
-	path = bundle/vim-startify
+	path = pack/all/start/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
 [submodule "bundle/vim-colorscheme-switcher"]
-	path = bundle/vim-colorscheme-switcher
+	path = pack/all/start/vim-colorscheme-switcher
 	url = https://github.com/xolox/vim-colorscheme-switcher.git
 [submodule "bundle/vim-which-key"]
-	path = bundle/vim-which-key
+	path = pack/all/start/vim-which-key
 	url = https://github.com/liuchengxu/vim-which-key.git
 [submodule "bundle/rigel"]
-	path = bundle/rigel
+	path = pack/all/start/rigel
 	url = https://github.com/Rigellute/rigel.git
 [submodule "bundle/vim-table-mode"]
-	path = bundle/vim-table-mode
+	path = pack/all/start/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
