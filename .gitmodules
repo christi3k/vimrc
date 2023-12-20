@@ -82,11 +82,6 @@
     ignore = untracked
 # syntax checking hacks
 # https://github.com/vim-syntastic/syntastic
-[submodule "bundle/syntastic"]
-	path = pack/all/start/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-# markdown runtime files
-# https://github.com/tpope/vim-markdown
 [submodule "bundle/vim-misc"]
 	path = pack/all/start/vim-misc
 	url = git@github.com:xolox/vim-misc.git
@@ -183,10 +178,6 @@
 [submodule "bundle/taboo"]
 	path = pack/all/start/taboo
 	url = https://github.com/gcmt/taboo.vim.git
-[submodule "bundle/syntastic-extras"]
-	path = pack/all/start/syntastic-extras
-	url = https://github.com/myint/syntastic-extras.git
-	ignore = dirty
 [submodule "bundle/vim-startify"]
 	path = pack/all/start/vim-startify
 	url = https://github.com/mhinz/vim-startify.git
