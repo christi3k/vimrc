@@ -1,9 +1,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " temporary work around for:
 " https://github.com/vim/vim/issues/3117
-if has('python3')
-  silent! python3 1
-endif
+"if has('python3')
+  "silent! python3 1
+"endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => System-specifc settings
@@ -26,8 +26,13 @@ let g:pathogen_blacklist = ['pydiction', 'vim-buffet']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Load plugins with Pathogen 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-execute pathogen#infect()
+"execute pathogen#infect()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => deoplete
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use deoplete.
+"let g:deoplete#enable_at_startup = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -105,6 +110,10 @@ let g:airline#extensions#taboo#enabled = 1
 "let g:buffet_left_trunc_icon = "\uf0a8"
 "let g:buffet_right_trunc_icon = "\uf0a9"
 
+"ale
+"let g:ale_completion_enabled = 1
+"set omnifunc=ale@completion#OmniFunc
+"
 
 "syntastic
 let g:syntastic_python_checkers=['pycodestyle']
