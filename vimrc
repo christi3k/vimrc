@@ -1,38 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" temporary work around for:
-" https://github.com/vim/vim/issues/3117
-"if has('python3')
-  "silent! python3 1
-"endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => System-specifc settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-if has("win32")
-  let g:pathogen_blacklist= []
-endif
-
-if has("mac")
-  "let g:pathogen_blacklist= ['vim-buffet']
-endif
-
-if has("unix")
-  let g:pathogen_blacklist= ['dash']
-endif
-
-let g:pathogen_blacklist = ['pydiction', 'vim-buffet']
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Load plugins with Pathogen 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"execute pathogen#infect()
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => deoplete
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use deoplete.
-"let g:deoplete#enable_at_startup = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -110,19 +79,20 @@ let g:airline#extensions#taboo#enabled = 1
 "let g:buffet_left_trunc_icon = "\uf0a8"
 "let g:buffet_right_trunc_icon = "\uf0a9"
 
+" =======================================
 "ale
+" =======================================
 "let g:ale_completion_enabled = 1
 "set omnifunc=ale@completion#OmniFunc
 "
-
-"syntastic
-let g:syntastic_python_checkers=['pycodestyle']
-let g:syntastic_ansible_checkers=['ansible', 'ansible-ansible_lint']
-let g:syntastic_sh_checkers=['shellcheck']
-let g:syntastic_make_checkers = ['gnumake']
-"let g:syntastic_markdown_checkers = ['remark_lint']
-let g:syntastic_yaml_checkers = ['yamllint']
-
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+" You can disable this option too
+" if you don't want linters to run on opening a file
+"let g:ale_lint_on_enter = 0
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1
+" =======================================
 
 "enable modelines
 set modeline
@@ -243,7 +213,6 @@ let g:go_highlight_extra_types = 1
 " =======================================
 " vim-markdown
 " =======================================
-
 map <Plug> <Plug>Markdown_MoveToCurHeader
 
 " =======================================

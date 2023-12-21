@@ -16,22 +16,18 @@ Symlink vimrc:
 
 `mkdir ~/.tmp`
 
-### install powerline fonts
+### install nerd patched fonts
 
-https://github.com/powerline/fonts
-
-```
-git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
+```bash
+brew tap homebrew/cask-fonts
+brew install --cask font-roboto-mono-nerd-font
 ```
 
 ### initializing plugins
 
-More details on using Git submodules and Tim Pope's Pathogen here:
-http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+I used to use Time Pope's pathogen, but finally switched to native plugins as of December 2023. Still using submodules.
+
+Initialize the plugins:
 
 `git submodule update --init --recursive`
 
@@ -40,14 +36,15 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
 ### updating plugins
 
 Periodically update all plugins (submodules) with:
-`git submodule foreach git pull origin master`
 
-NB: If you don't want to use _master_ branch for all plugins, you'll need to go into each submodule directory and pull from the branch you want.
+```
+git submodule update --recursive --remote
+```
 
 ### helpdocs
 
-generate help docs (with Pathogen):
-`:Helptags`
+generate help docs:
+`:helptags ALL`
 
 ## Plugins
 
@@ -55,7 +52,23 @@ generate help docs (with Pathogen):
 
 https://github.com/mileszs/ack.vim
 
+Ack is a [grep-like search tool](https://beyondgrep.com). This plugin let's you run it from within Vim.
+
+Need to install `ack`:
 `brew install ack`
+
+### ale
+
+[dense-analysis/ale: Check syntax in Vim/Neovim asynchronously and fix files, with Language Server Protocol (LSP) support](https://github.com/dense-analysis/ale)
+
+Replacement for Syntastic.
+
+You'll need to install whichever external syntax checkers you want ALE to make use of, e.g.:
+
+```
+brew install shellcheck
+pip3 install flake8
+```
 
 ### ansible-vim
 
@@ -119,7 +132,7 @@ No additional setup required. (Other than needing to have Dash installed.)
 
 https://github.com/vim-scripts/delimitMate.vim.git
 
-(Note sure if I still need this.)
+(Not sure if I still need this.)
 
 ### fugitive
 
@@ -136,6 +149,8 @@ No additional setup required.
 ### python syntax
 
 https://github.com/vim-python/python-syntax
+
+(Not sure if I still need this.)
 
 ### ragtag
 
@@ -166,14 +181,6 @@ No additional setup required.
 ### surround
 
 https://github.com/tpope/vim-surround
-
-### syntastic
-
-https://github.com/vim-syntastic/syntastic
-
-DEPRECATED
-
-Consider switching to: https://github.com/dense-analysis/ale
 
 ### taboo
 
