@@ -193,3 +193,6 @@
 [submodule "bundle/vim-table-mode"]
 	path = pack/all/start/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
+[submodule "pack/all/start/ale"]
+	path = pack/all/start/ale
+	url = https://github.com/dense-analysis/ale.git
